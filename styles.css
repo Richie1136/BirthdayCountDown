@@ -1,0 +1,357 @@
+/* *,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
+  color: rgb(40, 0, 0);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  height: 300px;
+  width: 300px;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+p {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+.btn {
+  text-transform: capitalize;
+  background: transparent;
+  color: black;
+  padding: 5px;
+  display: block;
+  transition: ease 1s;
+  font-size: 15px;
+  border: 3px solid black;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.btn:hover {
+  color: turquoise;
+  background: black;
+}
+
+.section {
+  padding: 3px;
+}
+
+.section-birthday {
+  width: 40px;
+  display: grid;
+  margin: 10px auto;
+}
+
+main {
+  display: grid;
+  place-items: center;
+  min-height: 12px;
+}
+
+.birthday-img {
+  margin-bottom: 10px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.birthday-info h3 {
+  text-transform: uppercase;
+  width: 100%;
+  color: white;
+  margin-right: 0;
+  margin-left: 0;
+}
+.birthday-info p {
+  color: black;
+  margin-top: 20px;
+}
+
+.birthday h4:not(.expired) {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+  letter-spacing: var(--spacing);
+}
+
+@media screen and (min-width: 992px) {
+  .section-birthday {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 5px;
+    width: 200px;
+  }
+  .birthday-img {
+    margin-bottom: 0;
+  }
+}
+.birthday-info p {
+  margin: 2rem 0;
+}
+.countdown {
+  display: flex;
+}
+.countdown-format {
+  background: grey;
+  color: white;
+  margin-right: 10px;
+  margin-top: 20px;
+  width: 300px;
+  height: 100px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.countdown-format span {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+.birthday-countdown {
+  width: 900px;
+} */
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(to right, #1fa2ff, #12d8fa, #a6ffcb);
+  color: rgb(40, 0, 0);
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+  height: 300px;
+  width: 300px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+h1 {
+  font-size: 25px;
+}
+h2 {
+  font-size: 20px;
+}
+h3 {
+  font-size: 15px;
+}
+h4 {
+  font-size: 12px;
+}
+p {
+  margin-bottom: 5px;
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 100px;
+    text-align: center;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  h3 {
+    font-size: 40px;
+  }
+  h4 {
+    font-size: 25px;
+    display: flex;
+    padding-bottom: 20px;
+  }
+  body {
+    font-size: 10px;
+  }
+}
+
+.btn {
+  text-transform: uppercase;
+  background: transparent;
+  color: black;
+  padding: 5px 10px;
+  display: inline-block;
+  transition: var(--transition);
+  font-size: 0.875rem;
+  border: 2px solid black;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 20%;
+}
+.btn:hover {
+  color: turquoise;
+  background: red;
+}
+.section {
+  padding: 20px 0;
+}
+
+.section-birthday {
+  width: 1500px;
+  margin: 10px auto;
+}
+
+main {
+  display: grid;
+  place-items: center;
+}
+.birthday-img {
+  margin-bottom: 10px;
+}
+.birthday-info h3 {
+  text-transform: uppercase;
+  color: purple;
+  margin-left: 300px;
+}
+.birthday-info p {
+  color: black;
+}
+.date {
+  color: black;
+  font-size: 0.85rem;
+}
+@media screen and (min-width: 992px) {
+  .section-center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 10px;
+    width: 200px;
+  }
+  .birthday-img {
+    margin-bottom: 0;
+  }
+}
+.birthday-info p {
+  margin: 15px 0;
+  font-size: 20px;
+  margin-left: 300px;
+}
+.countdown {
+  display: flex;
+}
+.countdown-format {
+  background: black;
+  color: white;
+  margin-right: 15px;
+  width: 100px;
+  height: 100px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+.countdown-format span {
+  display: block;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.countdown h4:not(.expired) {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+}
+
+p {
+  display: flex;
+  justify-content: center;
+}
+
+.hours {
+  justify-content: center;
+}
+
+.days {
+  justify-content: center;
+}
+
+.minutes {
+  justify-content: center;
+}
+
+.seconds {
+  justify-content: center;
+}
+
+.birthday {
+  display: flex;
+  margin-left: 25px;
+}
