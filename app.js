@@ -25,9 +25,9 @@ const days = [
 
 const countdown = document.querySelector('.countdown')
 const birthday = document.querySelector('.birthday')
-const count = document.querySelector('.countdown-format h4')
+const counts = document.querySelectorAll('.countdown-format h4')
 
-console.log(count)
+console.log(counts)
 // Year, Month, Day, Hours, Minutes, Seconds
 //(Months are 0-indexed)
 let futureDate = new Date(2021, 10, 15, 0, 0, 0)
@@ -99,4 +99,19 @@ const getRemainingTime = () => {
 
   const values = [days, hours, minutes, seconds]
 
+  const format = (item) => {
+    if (item < 10) {
+      // This will prefix 0 zero if the time goes below 10
+      return `0${item}`
+    } else {
+      return item
+    }
+  }
+
+  counts.forEach((count, index) => {
+    count.innerHTML = format(values[index])
+  })
+
 }
+
+getRemainingTime()
