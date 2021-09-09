@@ -48,7 +48,7 @@ console.log(day)
 const month = months[futureDate.getMonth()]
 console.log(month)
 
-birthday.textContent = `Birthday is on ${day} ${month} ${date}th, ${year} at ${hours}:${minutes}:${seconds}am`
+birthday.textContent = `Birthday is on ${day} ${month} ${date}th, ${year} at 0${hours}:0${minutes}:0${seconds}am`
 
 
 // Get time in milliseconds 
@@ -109,9 +109,21 @@ const getRemainingTime = () => {
   }
 
   counts.forEach((count, index) => {
+    // This will display the countdown til my birthday using the 
+    //format function using the values variable above and will get all the 
+    //different index values from the array  
     count.innerHTML = format(values[index])
   })
 
+  if (remain < 0) {
+    // If there is no time remaining on the birthday they we want to clear the 
+    //countdown
+    clearInterval(countdown2)
+    birthday.innerHTML = `<h4 class='Sorry, the birthday has passed</4>`
+  }
 }
+
+let countdown2 = setInterval(getRemainingTime, 1000)
+// This will call the getRemainingTime function every second 
 
 getRemainingTime()
