@@ -96,6 +96,7 @@ main {
 }
 .birthday-img {
   margin-bottom: 10px;
+  margin-left: 200px;
 }
 .birthday-info h3 {
   text-transform: uppercase;
@@ -128,6 +129,7 @@ main {
 }
 .countdown {
   display: flex;
+  margin-left: 80px;
 }
 .countdown-format {
   background: black;
